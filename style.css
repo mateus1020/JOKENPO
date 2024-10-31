@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+h1 {
+  font-size: 50px;
+}
+h1 span {
+  color: #ade046;
+}
+
+.box-1 {
+  width: 370px;
+  padding: 20px;
+  background-color: #ffff;
+  border: 3px solid #ff69b4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+#rock {
+  background-color: #7dbeed;
+}
+#paper {
+  background-color: #9ee01a;
+}
+#scissors {
+  background-color: #a200ff;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.zero-red {
+  color: #ff0000;
+}
+
+.zero-yellow {
+  color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: #000000;
+  }
+  img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  .box-1 {
+    width: 300px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 25px;
+    padding: 6px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

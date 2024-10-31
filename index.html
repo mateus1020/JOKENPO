@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Jokenpô</title>
+  </head>
+
+  <body>
+    <img src="./img/foto-body.jpg" />
+    <div class="box-1">
+      <h1>Jo<span>ken</span>pô</h1>
+
+      <div class="buttons">
+        <button id="rock" onclick="clickUser('rock')">&#128074;</button>
+        <button id="paper" onclick="clickUser('paper')">&#128400;</button>
+        <button id="scissors" onclick="clickUser('scissors')">&#9996;</button>
+      </div>
+      <p class="result"></p>
+
+      <p>Sua Pontuação: <span class="zero-red" id="humam-score">0</span></p>
+      <p>
+        Pontuação do PC: <span class="zero-black" id="machine-score">0</span>
+      </p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
